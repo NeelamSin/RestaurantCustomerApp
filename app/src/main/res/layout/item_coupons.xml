@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20.0dip"
+    android:layout_marginTop="25.799988dip"
+    android:layout_marginRight="20.0dip"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12.0dip">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:background="@drawable/rect_pink"
+                android:padding="1.5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:paddingLeft="5.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:tint="@color/colorLightBlack"
+                    android:src="@drawable/ic_past_order" />
+
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                    android:id="@+id/couponCode"
+                    android:textSize="13.0sp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:paddingRight="3.0dip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="BOUFFAGENEW"/>
+            </LinearLayout>
+        </LinearLayout>
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/applyButton"
+            android:textSize="12.5sp"
+            android:textColor="#ff2d5da1"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APPLY"/>
+    </LinearLayout>
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/couponDescription"
+        android:textSize="13.0sp"
+        android:textColor="#ff2f2f39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14.699982dip"
+        android:text="Get 30% discount using Phonepe"/>
+    <!--<TextView
+        android:textSize="12.5sp"
+        android:textColor="#ff9398a0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5.0dip"
+        android:text="Use code BOUFFAGENEW &amp; get 30% discount upto Rs. 150 on\nyour booking."/>
+    <TextView
+        android:textSize="12.0sp"
+        android:textColor="#ff2d5da1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:text="More Details"/>-->
+
+    <View
+        android:background="#ffe2e2e2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginTop="18.5dip" />
+</LinearLayout>

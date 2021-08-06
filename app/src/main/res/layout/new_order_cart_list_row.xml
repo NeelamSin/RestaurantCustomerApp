@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/colorPrimaryText"
+        android:text="Neelam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/itemQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="2dp"
+        android:text="Neelam"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorAccent"/>
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/itemCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs. 432"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorPrimaryText" />
+
+    <View
+        android:id="@+id/lineview"
+        android:layout_below="@+id/itemQuantity"
+        android:layout_width="150dp"
+        android:layout_height="0.2dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorAccent"/>
+
+</RelativeLayout>

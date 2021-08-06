@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="6dp"
+    android:layout_marginRight="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <com.eosinfotech.restaurantcustomerui.OwnClasses.RoundRectCornerImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circleviewimg1"
+            android:layout_width="38.4dp"
+            android:layout_height="38.4dp"
+            android:layout_marginTop="12.8dp"
+            android:layout_marginLeft="10.8dp"
+            android:tint="@color/colorPrimaryText"
+            android:src="@drawable/ic_user"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="15.4dp"
+            android:layout_marginTop="12.8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12.5dp"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_weight="1"
+                    android:id="@+id/userName"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:text="Neelam Sai"/>
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:stepSize="0.1"
+                    android:progressTint="@color/colorPrimaryText"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:focusable="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="18.2dp"
+                    android:rating="4"/>
+            </LinearLayout>
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_marginTop="2dp"
+                android:id="@+id/userDate"
+                android:text="24/11/2018"/>
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_marginTop="6.5dp"
+                android:id="@+id/userComment"
+                android:text="So we needed up ordering the deep fried salmon roll with Chinese hot mustard and wasabi noodles with salmon."/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5"/>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Bouffage</string>
+    <string name="drawer_open">Drawer Opened</string>
+    <string name="drawer_close">Drawer Closed</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="item_cost">₹ %1$s</string>
+    <string name="item_quantity">Quantity : %1$s</string>
+    <string name="notifications_admin_channel_name">Global Channel</string>
+    <string name="notifications_admin_channel_description">Notifications sent from the app admin</string>
+    <string name="nameerror">please enter valid guest name</string>
+    <string name="usernameerror">please enter valid display name</string>
+    <string name="mobileerror">please enter 10 digit number</string>
+    <string name="dateerror">please enter format yyyy-mm-dd</string>
+    <string name="timeerror">please enter time in between 00:00:00 to 23:59:00</string>
+    <string name="passworderror">New password did not meet our guidelines. use uppercase, lowercase, number and special character</string>
+    <string name="numberOfGuest">please give in between 1 to 99</string>
+
+    <string name="viewMenu">Ohoo, Check menu till restaurant confirmed your request<font color="black"><u><b>View Menu</b></u></font></string>
+
+
+    <string name="about_page_description" translatable="false">placerat id</string>
+
+    <string name="about_contact_us">Contact us</string>
+    <string name="about_instagram">Follow us on Instagram</string>
+    <string name="about_facebook">Like us on Facebook</string>
+    <string name="about_play_store">Rate us on the Play Store</string>
+    <string name="about_youtube">Watch us on Youtube</string>
+    <string name="about_twitter">Follow us on Twitter</string>
+    <string name="about_github">Fork us on GitHub</string>
+    <string name="about_website">Visit our website</string>
+
+    <string name="button.finish">FINISH</string>
+    <string name="button.next">NEXT</string>
+    <string name="button.skip">SKIP</string>
+
+    <string name="serverUrl">http://bouffage.eosinfotech.com/</string>
+    <string name="apiUrl">Invention/v1/Bouffage/</string>
+    <string name="loginUserUrl">loginUser</string>
+    <string name="fetchtableUrl">fetchtableall</string>
+    <string name="booktableUrl">editTabledetails</string>
+    <string name="fetchCategoryUrl">fetchMenu</string>
+    <string name="fetchMenuUrl">fetchMenu</string>
+    <string name="addOrderHeaderUrl">addOrderHeader</string>
+    <string name="addOrderLinesUrl">addOrderLines</string>
+
+    <string name="clientId">73gecKXtTSGCW1qsemzn</string>
+    <string name="taxUrl">getAllTax</string>
+    <string name="fetchOrdersUrl">fetchOrdercust</string>
+    <string name="registerUrl">addCustomer</string>
+    <string name="loginCustomerUrl">loginCustomer</string>
+    <string name="fetchRecom">fetchMenuRecom</string>
+    <string name="fetchOrderLines">fetchOrderID</string>
+
+    <string name="adduserfavouriteUrl">adduserfavourite</string>
+    <string name="fetchuserfavouriteUrl">fetchuserfavourite</string>
+    <string name="deluserfavouriteUrl">deluserfavourite</string>
+    <string name="getItemByIdUrl">getItemById</string>
+    <string name="UdpateOrderHeaderUrl">UdpateOrderHeader</string>
+    <string name="UpdateOrderLinesUrl">UpdateOrderLines</string>
+    <string name="UpdateOrderLinesDeleteUrl">UpdateOrderLinesDelete</string>
+    <string name="fetchtablebyIdUrl">fetchtablebyId</string>
+    <string name="settingsUrl">getSettingCompany</string>
+    <string name="getoffersCompanyUrl">getoffersCompany</string>
+    <string name="FetchOpenOrdercustUrl">fetchOpenOrdercust</string>
+    <string name="fetchOrderHeaderId">fetchOrderHeaderID</string>
+    <string name="title_activity_launcher">LauncherActivity</string>
+
+    <string name="addItemratingUrl">addItemrating</string>
+    <string name="fetchItemRevieByIdUrl">fetchItemreviewbyid</string>
+    <string name="addFcmDetailsUrl">addFCMdetails</string>
+    <string name="fetchFcmDetailsUrl">fetchFCMdetails</string>
+    <string name="addTableReservationUrl">addTablereservation</string>
+    <string name="fetchtablereservationsbyidUrl">fetchtablereservationsbyid</string>
+    <string name="addCustomerContactsUrl">addCustomerContacts</string>
+    <string name="getCustomerContactsUrl">getCustomerContacts</string>
+    <string name="fetchCouponsDetailsUrl">fetchCouponsDetails</string>
+    <string name="getItemandPriceUrl">getItemandPrice</string>
+    <string name="getaddmanagementUrl">getaddmanagement</string>
+    <string name="getItemandPricedailyUrl">getItemandPrice_daily</string>
+    <string name="getAllCompanyUrl">getAllCompany</string>
+    <string name="fetchOrderMealBookingUrl">fetchOrderMealBooking</string>
+
+    <string name="hotelMap"><font color="#c2c2c2">To get easy, turn-by-turn navigation to restaurant </font><font color="#00b9f5"><u><b> Navigate Route</b></u></font></string>
+
+</resources>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="8dp"
+    android:id="@+id/frameLayout">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="5dp"
+        app:cardElevation="6dp"
+        app:cardMaxElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="4dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="72dp"
+                android:layout_height="80dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="6dp"/>
+
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/textViewName"
+                style="@style/TextAppearance.AppCompat.Subhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/imageView"
+                android:paddingBottom="5dp"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimaryText"
+                tools:text="Movie Title"/>
+
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+                android:id="@+id/textViewVersion"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewName"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_marginRight="4dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/colorSecondaryText"
+                tools:text="Nowadays, user engagement is considered one of the most important metrics for the success of your app"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

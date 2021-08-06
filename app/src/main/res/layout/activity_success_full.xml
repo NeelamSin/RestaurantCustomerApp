@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CredentialActivity.SuccessFullActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true">
+            
+            <ImageView
+                android:id="@+id/mainLogo"
+                android:layout_width="220dp"
+                android:src="@drawable/applogonew"
+                android:layout_height="220dp"/>
+
+    </RelativeLayout>
+
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+        android:id="@+id/name"
+        android:layout_below="@+id/relativeOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textStyle="bold"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"/>
+
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+        android:id="@+id/namess"
+        android:layout_below="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textColor="@color/colorHeadText"
+        android:textStyle="bold"
+        android:text="Under Bouffage"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"/>
+
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/textViewTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/namess"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:textColor="@color/colorSecondaryText"
+        android:letterSpacing="0.1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+        android:text="succesfully logged in to your Account"/>
+
+</RelativeLayout>

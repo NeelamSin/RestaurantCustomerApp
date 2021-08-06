@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ElegantNumberButton">
+
+        <attr name="backGroundColor" format="color"/>
+        <attr name="initialNumber" format="integer"/>
+        <attr name="finalNumber" format="integer" />
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="backgroundDrawable" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="timeline_style" >
+        <attr name="marker" format="color|reference"/>
+        <attr name="line" format="color|reference"/>
+        <attr name="markerSize" format="dimension"/>
+        <attr name="lineSize" format="dimension"/>
+        <attr name="lineOrientation" format="enum">
+            <enum name="horizontal" value="0"/>
+            <enum name="vertical" value="1"/>
+        </attr>
+        <attr name="linePadding" format="dimension"/>
+        <attr name="markerInCenter" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="ThumbUpView">
+        <attr name="edgeColor" format="color|reference"></attr>
+        <attr name="fillColor" format="color|reference"></attr>
+        <attr name="cracksColor" format="color|reference"></attr>
+        <attr name="bgColor" format="color|reference"></attr>
+        <attr name="unlikeType" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="gradient">
+
+        <attr name="transition_drawable" format="enum"/>
+        <attr name="transition_duration" format="integer"/>
+    </declare-styleable>
+</resources>

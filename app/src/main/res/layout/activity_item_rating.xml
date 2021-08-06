@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivities.ItemRatingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/secondAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:theme="@style/MainTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient"
+            app:popupTheme="@style/MainTheme.PopupOverlay">
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorHeadText"
+                android:layout_marginRight="20dp"
+                android:text="Please Give Us Some Love"
+                android:letterSpacing="0.2"
+                android:textAllCaps="true"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeOne"
+        android:layout_below="@+id/secondAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationViewThree"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_enableMergePathsForKitKatAndAbove="true"
+            app:lottie_fileName="moneypaid.json"/>
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:id="@+id/textViewOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#6dcc5b"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:layout_toRightOf="@+id/lottieAnimationViewThree"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="Money Paid"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/relativeOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sampleBottom"
+        android:background="#FFF">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/androidList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:padding="4dp"
+                android:scrollbars="none"/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/sampleBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="@drawable/bottom_gradient">
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/btnLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/testbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@android:color/transparent">
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Rating "
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorFirstWhite"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

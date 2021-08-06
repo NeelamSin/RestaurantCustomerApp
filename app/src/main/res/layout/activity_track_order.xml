@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivities.TrackOrderActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/secondAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:theme="@style/MainTheme.AppBarOverlay">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient"
+            app:popupTheme="@style/MainTheme.PopupOverlay">
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorHeadText"
+                android:layout_marginRight="20dp"
+                android:text="track order"
+                android:visibility="gone"
+                android:letterSpacing="0.2"
+                android:textAllCaps="true"
+                android:ellipsize="end"
+                android:maxLines="1"/>
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/firstLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/secondAppBarLayout"
+        android:orientation="horizontal"
+        android:gravity="center|center_horizontal"
+        android:background="@drawable/bottom_gradient"
+        android:elevation="8dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/b_orderMeal_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/view"
+                android:text="Order Number"
+                android:gravity="right"
+                android:textColor="@color/colorBackground"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+            <View
+                android:id="@+id/view"
+                android:layout_height="1dp"
+                android:layout_width="50dp"
+                android:layout_centerHorizontal="true"/>
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/b_orderMeal_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view"
+                android:text="#123456789"
+                android:gravity="center_horizontal"
+                android:textColor="@color/colorBackground"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLinearLayout"
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:id="@+id/item_timelines">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical"
+            android:layout_weight="8">
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivities.TrackOrderActivity" />
+        </LinearLayout>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_timelines"
+            android:orientation="vertical"
+            android:layout_gravity="bottom"
+            android:id="@+id/item_timeline">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/item_timeline">
+
+        <Button
+            android:id="@+id/orderstatusbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Order status on Every Foodie"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorBackground"
+            android:background="@drawable/capsule_button"/>
+    </LinearLayout>
+
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+        android:id="@+id/sampleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="4dp"
+        android:letterSpacing="0.2"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="12sp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:text="powered by eos infotech"/>
+
+</RelativeLayout>

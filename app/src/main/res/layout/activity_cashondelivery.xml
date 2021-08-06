@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StatusActivity.OrderSuccessActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieAnimationViewTwo"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginBottom="10dp"
+            app:lottie_loop="true"
+            app:lottie_autoPlay="true"
+            app:lottie_enableMergePathsForKitKatAndAbove="true"
+            app:lottie_fileName="ordersuccess.json"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="46dp"
+        android:layout_alignParentBottom="true">
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:id="@+id/textViewOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:textColor="@color/colorOrderSuccess"
+            android:textAllCaps="true"
+            android:letterSpacing="0.1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+            android:text="Order placed"/>
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/textViewTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewOne"
+            android:layout_marginTop="18dp"
+            android:gravity="center"
+            android:textColor="@color/colorLightGrey"
+            android:letterSpacing="0.1"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:text="you should receive a confirmation shortly containing your order number and order status."/>
+    </RelativeLayout>
+</RelativeLayout>

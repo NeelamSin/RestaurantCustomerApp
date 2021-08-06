@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/linear_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/fab_type"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/textview_title_item"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_shape"
+                android:padding="4dp"
+                app:layout_anchorGravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_past_order" />
+            </RelativeLayout>
+
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/textview_title_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLength="15"
+                android:maxLines="2"
+                android:text="Soups"
+                android:textColor="@color/colorPrimaryText"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

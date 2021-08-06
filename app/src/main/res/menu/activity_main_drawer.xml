@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/aboutUs"
+            android:icon="@drawable/ic_about_us"
+            android:title="About US"/>
+        <item
+            android:id="@+id/aboutEos"
+            android:icon="@drawable/ic_about_bouffage"
+            android:title="About Bouffage"/>
+        <item
+            android:id="@+id/faq"
+            android:icon="@drawable/ic_faq"
+            android:title="FAQ"/>
+        <item
+            android:id="@+id/privacyPlicy"
+            android:icon="@drawable/ic_privacy"
+            android:title="Privacy Policy"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Logout"/>
+
+    </group>
+
+</menu>

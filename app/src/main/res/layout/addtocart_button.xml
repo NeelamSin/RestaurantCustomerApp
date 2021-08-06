@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/subtract_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.5"
+        android:text="-"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:textColor="@color/colorPrimaryText"/>
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+        android:id="@+id/number_counter"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@color/colorHeadText"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:clickable="true"
+        android:textStyle="normal"
+        android:textSize="6dp"
+        android:background="?attr/selectableItemBackground"
+        android:text="+"
+        android:textColor="@color/colorPrimaryText"/>
+
+</LinearLayout>

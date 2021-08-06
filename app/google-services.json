@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "830975028173",
+    "firebase_url": "https://restaurant-staff.firebaseio.com",
+    "project_id": "restaurant-staff",
+    "storage_bucket": "restaurant-staff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830975028173:android:b125d9a3465dd501",
+        "android_client_info": {
+          "package_name": "com.eosinfotech.restaurantcustomerui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830975028173-qnp315ihjrg6mh4l2ddl6134s7tquv3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eosinfotech.restaurantcustomerui",
+            "certificate_hash": "8378274a06fcda67f4045ba71474066f60dc209c"
+          }
+        },
+        {
+          "client_id": "830975028173-r91f0bdhvn25qhfh4cuau1uvd18f4m66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK2LZ7ORnjYu4Rk6_AO_0hyy7YeHk4IRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830975028173-r91f0bdhvn25qhfh4cuau1uvd18f4m66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830975028173:android:4b68c7c6f07895e3",
+        "android_client_info": {
+          "package_name": "com.eosinfotech.restaurantstaffui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830975028173-iss7tbgnts7rof8e67p4bovco6beqo6i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.eosinfotech.restaurantstaffui",
+            "certificate_hash": "6baa74f6e8f0ee6e15373becc297e8802d227246"
+          }
+        },
+        {
+          "client_id": "830975028173-r91f0bdhvn25qhfh4cuau1uvd18f4m66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK2LZ7ORnjYu4Rk6_AO_0hyy7YeHk4IRE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830975028173-r91f0bdhvn25qhfh4cuau1uvd18f4m66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

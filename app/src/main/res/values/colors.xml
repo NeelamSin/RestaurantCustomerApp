@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#F3F3F3</color>
+    <color name="colorPrimaryDark">#F3F3F3</color>
+    <color name="colorAccent">#F3F3F3</color>
+    <color name="colorSecondary">#282c3f</color>
+
+    <color name="colorOrange">#FC8019</color>
+    <color name="colorGunMetal">#282C3F</color>
+    <color name="colorGreen">#008800</color>
+    <color name="colorLightGreen">#48C479</color>
+
+    <color name="colorLightGrey">#d3dfe6</color>
+    <color name="colorOrderSuccess">#4285F4</color>
+    <color name="colorOrderFail">#DB4437</color>
+    <color name="colorPayment">#ff7c7b</color>
+    <color name="colorLightPink">#ffcdd2</color>
+    <color name="colorLightWhite">#FEFEFE</color>
+    <color name="colorLightBlack">#333333</color>
+
+    <color name="colorMain">#D22532</color>
+    <color name="colorTrackOrder">#F1CF74</color>
+    <color name="colorBackground">#F6F5FA</color>
+    <color name="colorActivityBackground">#212940</color>
+    <color name="colorHightlitedColor">#1c2641</color>
+    <color name="colorLineView">#14000000</color>
+    <color name="colorHeadText">#00b9f5</color>
+    <color name="colorHeadLightText">#474944</color>
+    <color name="colorPrimaryText">#333</color>
+    <color name="colorSecondaryText">#c2c2c2</color>
+    <color name="colorFirstWhite">#FEFEFE</color>
+    <color name="colorLightBrand">#0190bf</color>
+
+    <!--Onboarding Screen-->
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="black_transparent">#14000000</color>
+    <color name="black_transparent_image">#46000000</color>
+    <color name="active_indicator">@android:color/white</color>
+    <color name="inactive_indicator">#4D000000</color>
+    <color name="grey_600">#757575</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_200">#EEEEEE</color>
+    <color name="bg">#757575</color>
+
+
+
+    <!-- About page COlor-->
+    <!-- General -->
+    <color name="about_item_icon_color">#313131</color>
+
+    <!-- Social -->
+    <color name="about_facebook_color">#3b5998</color>
+    <color name="about_twitter_color">#55acee</color>
+    <color name="about_instagram_color">#3f729b</color>
+    <color name="about_play_store_color">#45BBC2</color>
+    <color name="about_youtube_color">#cd201f</color>
+    <color name="about_github_color">#333333</color>
+</resources>

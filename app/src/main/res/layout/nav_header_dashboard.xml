@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+        android:id="@+id/sampleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="version : 2.3.0"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="12sp"/>
+
+    <RelativeLayout
+        android:id="@+id/singleRow"
+        android:layout_below="@+id/sampleText"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:padding="8dp">
+        <ImageView
+            android:id="@+id/userImg"
+            android:src="@mipmap/ic_launcher_round"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/pNametxt"
+            android:text="User Name"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium.Inverse"
+            android:layout_marginTop="6dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/userImg"
+            android:layout_toEndOf="@+id/userImg"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" />
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+            android:id="@+id/pJobProfiletxt"
+            android:text="Edit Profile"
+            android:textColor="@color/colorSecondaryText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pNametxt"
+            android:layout_alignLeft="@+id/pNametxt"
+            android:layout_alignStart="@+id/pNametxt" />
+    </RelativeLayout>
+
+    <View
+        android:layout_below="@+id/singleRow"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@color/colorLightGrey"/>
+</RelativeLayout>

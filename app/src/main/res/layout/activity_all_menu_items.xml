@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/abbBarLaout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:theme="@style/MainTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:collapseIcon="@drawable/ic_cancel"
+            app:popupTheme="@style/MainTheme.PopupOverlay">
+
+           <!-- <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorHeadText"
+                android:text="Menu"
+                android:letterSpacing="0.1"
+                android:textAllCaps="true"/>-->
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/abbBarLaout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/sampleBottom"
+            android:background="#FFF">
+
+            <!--<com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Recommended For You"
+                android:textSize="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/colorLightPink"
+                android:id="@+id/sampelTextViewss"/>-->
+
+         <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:padding="2dp"
+            android:scrollbars="none"/>
+
+            <!--<com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Recommended For You"
+                android:layout_below="@+id/recycler_view"
+                android:textSize="10dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/colorLightPink"
+                android:id="@+id/sampelTextView"/>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/androidList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:padding="2dp"
+                android:layout_below="@+id/recycler_view"
+                android:scrollbars="none"/>
+
+            <LinearLayout
+                android:id="@+id/layout_empty"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_icon"
+                    android:layout_width="108dp"
+                    android:layout_height="108dp"
+                    android:tint="@color/colorSecondaryText"
+                    android:src="@drawable/emptybag"
+                    tools:ignore="ContentDescription" />
+
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                    android:id="@+id/text_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorSecondaryText"
+                    android:text="Oops, looks like there is no items to display here or you're currently offline"/>
+
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+                    android:id="@+id/text_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+                    android:textColor="@color/colorHeadText"
+                    android:text="CHECK AGAIN"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/sampleBottom"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="@drawable/bottom_gradient">
+        <!--</LinearLayout>-->
+        <LinearLayout
+            android:id="@+id/btnLL"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/testbutton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@android:color/transparent">
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                    android:id="@+id/one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200 Items"
+                    android:textColor="@color/colorFirstWhite"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+                <View
+                    android:id="@+id/viewTwo"
+                    android:layout_width="2dp"
+                    android:layout_height="18dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/colorFirstWhite"
+                    android:layout_toRightOf="@+id/one"/>
+
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                    android:id="@+id/two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Rs. 398000"
+                    android:textColor="@color/colorFirstWhite"
+                    android:layout_toRightOf="@+id/viewTwo"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+            </RelativeLayout>
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="View Order"
+                android:textAllCaps="true"
+                android:drawableRight="@drawable/ic_forward"
+                android:paddingRight="20dp"
+                android:textColor="@color/colorFirstWhite"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

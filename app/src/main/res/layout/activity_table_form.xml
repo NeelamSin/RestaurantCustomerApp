@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaa">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="50dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:src="@drawable/applogonew" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_marginRight="18dp"
+        android:layout_marginLeft="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_user"
+                    android:tint="@color/colorSecondaryText"
+                    android:padding="10dp"/>
+            </FrameLayout>
+
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:hint="Enter Guest Name"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="14dp"
+                android:inputType="text"
+                android:textColor="@color/colorPrimaryText"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_phone"
+                    android:tint="@color/colorSecondaryText"
+                    android:padding="10dp"/>
+            </FrameLayout>
+
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:id="@+id/mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:hint="Phone Number"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="14dp"
+                android:maxLength="10"
+                android:inputType="number"
+                android:textColor="@color/colorPrimaryText"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackground">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_number_of_guest"
+                        android:tint="@color/colorSecondaryText"
+                        android:padding="10dp"/>
+                </FrameLayout>
+                <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                    android:id="@+id/numberOfGuest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackground"
+                    android:padding="10dp"
+                    android:hint="No.Of Guest"
+                    android:textCursorDrawable="@drawable/custom_cursor"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="14dp"
+                    android:maxLength="5"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimaryText"
+                    android:layout_marginRight="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackground">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_group_booking"
+                        android:tint="@color/colorSecondaryText"
+                        android:padding="10dp"/>
+                </FrameLayout>
+                <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                    android:id="@+id/groupBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBackground"
+                    android:padding="10dp"
+                    android:hint="Group Booking"
+                    android:textCursorDrawable="@drawable/custom_cursor"
+                    android:textColorHint="@color/colorSecondaryText"
+                    android:textSize="14dp"
+                    android:inputType="text"
+                    android:maxLength="8"
+                    android:textColor="@color/colorPrimaryText"
+                    android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_date"
+                    android:tint="@color/colorSecondaryText"
+                    android:padding="10dp"/>
+            </FrameLayout>
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:id="@+id/bookingDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:hint="Select A Date"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimaryText"
+                android:singleLine="true" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="10dp">
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_time"
+                    android:tint="@color/colorSecondaryText"
+                    android:padding="10dp"/>
+            </FrameLayout>
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:id="@+id/bookingTime"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:padding="10dp"
+                android:hint="Booking Time"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textColorHint="@color/colorSecondaryText"
+                android:textSize="14dp"
+                android:textColor="@color/colorPrimaryText"
+                android:singleLine="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right">
+                <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/ic_date"
+                    android:text="Book a Table"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorBackground"
+                    android:gravity="center"
+                    android:background="@drawable/bottom_gradient"
+                    android:padding="16dp"
+                    android:id="@+id/book"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="It may take upto 15 minutes."
+        android:textColor="@color/colorBackground"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp"
+        android:gravity="center" />
+</RelativeLayout>
+
+
+
+

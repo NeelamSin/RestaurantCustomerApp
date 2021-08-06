@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/one"
+        android:orientation="vertical"
+        android:paddingLeft="22.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:inputType="textCapWords"
+            android:textColor="@color/colorLightGreen"
+            android:id="@+id/deliveryType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13.0dip"
+            android:text="Office" />
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorSecondaryText"
+            android:id="@+id/completeAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.299988dip"
+            android:layout_marginRight="20.0dip"/>
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/editButton"
+            android:layout_below="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:layout_marginTop="6dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginBottom="12.0dip">
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+            android:id="@+id/imageViewOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:visibility="gone"
+            android:inputType="textCapWords"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:textColor="@color/colorLightGreen"/>
+        </RelativeLayout>
+        <View
+           android:background="#ffcdd9d9"
+            android:layout_below="@+id/editButton"
+          android:layout_width="fill_parent"
+          android:layout_height="0.70000005dip" />
+</RelativeLayout>

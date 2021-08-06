@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_gradient"
+    tools:context=".BookingType.TableBookingActivity">
+
+    <RelativeLayout
+        android:id="@+id/firstRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:background="@null"
+        android:padding="12dp">
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Bouffage"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textAllCaps="true"
+            android:letterSpacing="0.3"
+            android:textColor="@color/colorBackground"/>
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+            android:layout_below="@+id/sample"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="you cannot change the later"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/colorBackground"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/firstRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@null">
+            <GridView
+                android:id="@+id/gridView1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:numColumns="auto_fit"
+                android:padding="12dp"
+                android:scrollbars="none"
+                android:horizontalSpacing="10dp"
+                android:verticalSpacing="10dp">
+            </GridView>
+    </RelativeLayout>
+</RelativeLayout>

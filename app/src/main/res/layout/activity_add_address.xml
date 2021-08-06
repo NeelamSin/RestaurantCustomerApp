@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    android:orientation="vertical" 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relativeZero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/secondAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/gradient"
+        android:theme="@style/MainTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/gradient"
+            app:popupTheme="@style/MainTheme.PopupOverlay">
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_below="@+id/secondAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF">
+
+    <LinearLayout
+        android:id="@+id/relativeOne"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:paddingTop="17.0dip"
+        android:paddingBottom="0.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:textSize="11.299988sp" 
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Your Name" />
+        
+        <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+            android:textSize="14.0sp"
+            android:textColor="@color/colorGunMetal"
+            android:background="@null"
+            android:inputType="textCapWords"
+            android:paddingLeft="21.0dip" 
+            android:paddingBottom="15.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="3.0dip"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:hint="contact name" />
+        
+        <View 
+            android:background="#ffcdd9d9"
+            android:layout_width="fill_parent"
+            android:layout_height="0.70000005dip" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/relativeTwo"
+        android:layout_below="@+id/relativeOne"
+        android:orientation="vertical" 
+        android:background="#ffffffff"
+        android:paddingTop="11.5dip" 
+        android:paddingBottom="0.0dip" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content">
+        
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:textSize="11.299988sp" 
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Mobile Number" />
+        
+        <LinearLayout 
+            android:orientation="horizontal" 
+            android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:layout_marginTop="3.0dip">
+            
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:id="@+id/phoneNumber"
+                android:textSize="14.0sp"
+                android:textColor="@color/colorGunMetal"
+                android:background="@null"
+                android:paddingLeft="21.0dip" 
+                android:paddingBottom="15.0dip" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:hint="xxxxx xxxxx"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_weight="1.0" />
+            
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:textSize="11.299988sp" 
+                android:textColor="@color/colorGreen"
+                android:paddingLeft="21.0dip" 
+                android:paddingRight="13.5dip" 
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content" 
+                android:text="Verified" />
+            
+        </LinearLayout>
+        
+        <View 
+            android:background="#ffcdd9d9"
+            android:layout_width="fill_parent"
+            android:layout_height="0.70000005dip" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/relativeThree"
+        android:layout_below="@+id/relativeTwo"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:paddingTop="11.5dip"
+        android:paddingBottom="0.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:textSize="11.299988sp"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="Add Address" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip">
+
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/exactLocation"
+                android:textSize="14.0sp"
+                android:textColor="@color/colorGunMetal"
+                android:paddingLeft="21.0dip"
+                android:paddingBottom="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:hint="E.G. Hyderabad, Bangalore"
+                android:layout_weight="1.0" />
+
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+                android:id="@+id/useCurrentLocation"
+                android:textSize="11.299988sp"
+                android:textColor="@color/colorMain"
+                android:paddingLeft="21.0dip"
+                android:paddingRight="13.5dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Use Current Location" />
+
+        </LinearLayout>
+
+        <View
+            android:background="#ffcdd9d9"
+            android:layout_width="fill_parent"
+            android:layout_height="0.70000005dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeFour"
+        android:layout_below="@id/relativeThree"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:paddingTop="11.5dip"
+        android:paddingBottom="0.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:textSize="11.299988sp"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Address" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip">
+
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:id="@+id/completeAddress"
+                android:textSize="14.0sp"
+                android:textColor="@color/colorGunMetal"
+                android:background="@null"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:paddingLeft="21.0dip"
+                android:paddingBottom="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:hint="h.no and street, apartment, suite, unit, building, floor, etc."
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <View
+            android:background="#ffcdd9d9"
+            android:layout_width="fill_parent"
+            android:layout_height="0.70000005dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/relativeFive"
+        android:layout_below="@+id/relativeFour"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:paddingTop="11.5dip"
+        android:paddingBottom="0.0dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:textSize="11.299988sp"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Instruction" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3.0dip">
+
+            <com.eosinfotech.restaurantcustomerui.OwnClasses.CustomEditText
+                android:textSize="14.0sp"
+                android:textColor="@color/colorGunMetal"
+                android:background="@null"
+                android:paddingLeft="21.0dip"
+                android:paddingBottom="15.0dip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textCursorDrawable="@drawable/custom_cursor"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:hint="tell us where to leave your receients parcel if they are out."
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <View
+            android:background="#ffcdd9d9"
+            android:layout_width="fill_parent"
+            android:layout_height="0.70000005dip" />
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:id="@+id/relativeSix"
+            android:textSize="11.299988sp"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip"
+            android:layout_marginTop="6dip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Type" />
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/statusText"
+            android:textSize="11.299988sp"
+            android:textColor="@color/colorSecondaryText"
+            android:paddingLeft="21.0dip"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Instruction" />
+
+        <LinearLayout
+            android:id="@+id/buttons_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="30dp">
+            <Button
+                android:id="@+id/test1_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_right"
+                android:text="Home"
+                android:textAllCaps="false"
+                android:textColor="@drawable/selector_buttons_text"/>
+
+            <Button
+                android:id="@+id/test2_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@drawable/selector_buttons_text"
+                android:text="Work"
+                android:textAllCaps="false"
+                android:background="@drawable/selector_btn_left"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/test3_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@drawable/selector_buttons_text"
+                android:text="Others"
+                android:textAllCaps="false"
+                android:background="@drawable/selector_btn_left"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/addAddressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:text="Add Address"
+            android:padding="4dp"
+            android:textStyle="bold"
+            android:background="@android:color/transparent"
+            android:textColor="@color/colorGreen"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewOne"
+        android:layout_below="@+id/relativeFive"
+        android:background="#ffcdd9d9"
+        android:layout_width="fill_parent"
+        android:layout_height="0.70000005dip"
+        android:layout_marginTop="8.0dip" />
+
+    <LinearLayout
+        android:id="@+id/relativeSeven"
+        android:layout_below="@+id/viewOne"
+        android:orientation="vertical"
+        android:background="#ffffffff"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+            android:textSize="13.299988sp"
+            android:textColor="@color/colorGunMetal"
+            android:paddingLeft="22.0dip"
+            android:paddingTop="17.0dip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Saved Addresses" />
+
+        <View
+            android:background="@color/colorHeadText"
+            android:layout_width="110dp"
+            android:layout_marginLeft="22.0dip"
+            android:layout_marginTop="6dp"
+            android:layout_height="0.70000005dip" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_marginTop="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" />
+
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

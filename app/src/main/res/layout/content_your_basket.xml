@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/formulae"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<RelativeLayout
+    android:id="@+id/relativeOne"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.LightTextView
+        android:id="@+id/sampleText"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text=" Bouffage to accept payments including UPI and wallets including JioMoney, Mobikwik, Ola Money and many more!"
+        android:gravity="center"
+        android:textColor="@color/colorSecondaryText"
+        android:padding="8dp"
+        android:clickable="true"
+        android:background="?attr/selectableItemBackground"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+</RelativeLayout>
+
+
+<RelativeLayout
+android:id="@+id/relativeTwo"
+android:layout_below="@+id/relativeOne"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@color/colorFirstWhite"
+android:padding="10dp"
+android:layout_marginTop="12dp"
+android:layout_marginBottom="8dp"
+android:layout_marginLeft="8dp"
+android:layout_marginRight="8dp">
+<LinearLayout
+    android:id="@+id/linearOne"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Order Details"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryText"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle"/>
+</LinearLayout>
+<View
+    android:id="@+id/lineview"
+    android:layout_below="@+id/linearOne"
+    android:layout_width="50dp"
+    android:layout_height="0.5dp"
+    android:layout_marginTop="8dp"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorSecondaryText"/>
+</RelativeLayout>
+
+
+
+<android.support.v7.widget.RecyclerView
+android:id="@+id/recyclerView"
+android:layout_below="@+id/relativeTwo"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:divider="@null"
+android:padding="4dp"
+android:scrollbars="none"
+android:background="@color/colorFirstWhite"/>
+
+
+
+<RelativeLayout
+android:id="@+id/relativeThree"
+android:layout_below="@+id/recyclerView"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:background="@color/colorFirstWhite"
+android:padding="10dp"
+android:layout_marginTop="8dp"
+android:layout_marginBottom="8dp"
+android:layout_marginLeft="8dp"
+android:layout_marginRight="8dp">
+<LinearLayout
+    android:id="@+id/asdf"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/itemTotal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Item Total"
+        android:textColor="@color/colorHeadText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/itemCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:textColor="@color/colorHeadText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/asdfgh"
+    android:layout_below="@+id/asdf"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="true"
+        android:scrollbarSize="0.5dp"
+        android:scrollbarThumbVertical="@color/colorAccent"
+        android:scrollbars="vertical"
+        android:background="@color/colorFirstWhite"/>
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/asdfghjkl"
+    android:layout_below="@+id/asdfgh"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp">
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/deliveryCharges"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Delivery Charges"
+        android:textColor="@color/colorPrimaryText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+    <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+        android:id="@+id/deliveryCost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:textColor="@color/colorPrimaryText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+</LinearLayout>
+
+<View
+    android:id="@+id/lineviewFour"
+    android:layout_below="@+id/asdfghjkl"
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:layout_marginTop="8dp"
+    android:layout_centerHorizontal="true"
+    android:background="@color/colorPrimaryText"/>
+</RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeThree"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@color/colorBackground">
+            <com.eosinfotech.restaurantcustomerui.CustomFonts.BoldTextView
+                android:id="@+id/selectCoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:text="Apply Coupon"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorLightGreen"/>
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_right_arrow"/>
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/discountlinear"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/discounttextview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Coupon Discount"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+        <com.eosinfotech.restaurantcustomerui.CustomFonts.RegularTextView
+            android:id="@+id/discount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="end"
+            android:gravity="end"
+            android:textColor="@color/colorPrimaryText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+    </LinearLayout>
+</RelativeLayout>
